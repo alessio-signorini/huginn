@@ -22,11 +22,15 @@ module AssignableTypes
     end
 
     def types
-      const_get(:TYPES).map(&:constantize)
+      all_agents.map(&:constantize)
+    end
+
+    def all_agents
+      const_get(:TYPES) + HuginnAgent.additional_agents
     end
 
     def valid_type?(type)
-      const_get(:TYPES).include?(type)
+      all_agents.include?(type)
     end
 
     def build_for_type(type, user, attributes = {})
