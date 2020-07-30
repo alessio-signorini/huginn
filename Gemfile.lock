@@ -31,6 +31,38 @@ GIT
       rest-client (>= 2.0)
 
 GIT
+  remote: https://github.com/alessio-signorini/huginn-fitbit-agent.git
+  revision: 36215fbd81b1ce3e8fcbf58dd5e4743d76ff6a50
+  specs:
+    huginn_fitbit_agent (1.0.4)
+      huginn_agent
+      oauth2
+
+GIT
+  remote: https://github.com/alessio-signorini/huginn-instagram-agent.git
+  revision: d32785f9c65342553fe7268787a339017899a195
+  specs:
+    huginn_instagram_agent (0.4.2)
+      httparty
+      huginn_agent
+
+GIT
+  remote: https://github.com/alessio-signorini/huginn-withings-agent.git
+  revision: 8dccffa25b40898083072338d4df7dbca6386b86
+  specs:
+    huginn_withings_agent (1.0.3)
+      httparty
+      huginn_agent
+
+GIT
+  remote: https://github.com/alessio-signorini/huginn_agent.git
+  revision: 9a450f9a2e2d3838117fc74f3747eccf45a71116
+  ref: 9a450f9a2e2d3838117fc74f3747eccf45a71116
+  specs:
+    huginn_agent (0.6.1)
+      thor
+
+GIT
   remote: https://github.com/bamorim/omniauth-dropbox-oauth2.git
   revision: 35046706fb781ed3b57dfb9c3cd44ed0f3d3f8ea
   ref: 35046706fb781ed3b57dfb9c3cd44ed0f3d3f8ea
@@ -346,8 +378,6 @@ GEM
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
     httpclient (2.8.3)
-    huginn_agent (0.4.0)
-      thor
     hypdf (1.0.10)
       httmultiparty (~> 0.3)
       httparty (~> 0.13)
@@ -727,7 +757,10 @@ DEPENDENCIES
   hipchat (~> 1.2.0)
   httmultiparty (~> 0.3.16)
   httparty (~> 0.13)
-  huginn_agent (~> 0.4.0)
+  huginn_agent!
+  huginn_fitbit_agent!
+  huginn_instagram_agent!
+  huginn_withings_agent!
   hypdf (~> 1.0.10)
   jquery-rails (~> 4.2.1)
   json (~> 2.3)
