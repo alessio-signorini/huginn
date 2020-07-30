@@ -107,7 +107,10 @@ gem 'geokit-rails', '~> 2.2.0'
 gem 'httparty', '~> 0.13'
 gem 'httmultiparty', '~> 0.3.16'
 gem 'jquery-rails', '~> 4.2.1'
-gem 'huginn_agent', '~> 0.4.0'
+
+# Until https://github.com/huginn/huginn_agent/pull/29 is merged
+gem 'huginn_agent', github: 'alessio-signorini/huginn_agent', ref: '9a450f9a2e2d3838117fc74f3747eccf45a71116'
+
 gem 'json', '~> 2.3'
 gem 'jsonpath', '~> 1.0.1'
 gem 'kaminari', '~> 1.1.1'
